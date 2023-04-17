@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipes</title>
+    <link rel="stylesheet" href="Recipes.css" >
+</head>
+
+<body>
+    <main>
+        <img src="food.jpg" class="background" id="home">
+        <section>
+            <div class="navigation">
+                <nav class="navbar">
+                    <ul>
+                        <!--<li><img src="icon.jpg">AudioBox</li> -->
+                        <li id="name">Foodies</li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#foodbox">Recipes</a></li>
+                        <li><a href="#fev-recipe">favorite</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#add-recipe"><button type="submit" class="add">Add Recipes</button></a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div class="welcome">
+                <h1>It Is Better Than <br>An Expensive cookery book</h1>
+                <p>Learn how to make your favorite restaurant's dishes.</p>
+                <form>
+                    <input type="search" placeholder="Search... ">
+                    <button type="submit" class="search">Search</button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="category" id="foodbox">
+                <h1>Recipes By Category</h1>
+                <p>The first time you make something, follow the recipe, then figure out how to tailor it to your own
+                    tastes.</p>
+
+            </div>
+        </section>
+
+        <div class="img-block">
+            <a href="" class="images" id="img1">
+                <div>
+                    <h3>Pizza</h3><img src="pizza.png">
+                </div>
+            </a>
+            <a href="" class="images" id="img2">
+                <div>
+                    <h3>Burger</h3><img src="burger.png">
+                </div>
+            </a>
+            <a href="" class="images" id="img3">
+                <div>
+                    <h3>Chiness</h3><img src="Chiness.png">
+                </div>
+            </a>
+            <a href="" class="images" id="img4">
+                <div>
+                    <h3>Biryani</h3><img src="biryani.png">
+                </div>
+            </a>
+            <a href="" class="images" id="img5">
+                <div>
+                    <h3>Rolls</h3><img src="rolls.jpg">
+                </div>
+            </a>
+            <a href="" class="images" id="img6">
+                <div>
+                    <h3>Chaats</h3><img src="chaat.jpg">
+                </div>
+            </a>
+            <a href="" class="images" id="img7">
+                <div>
+                    <h3>Sandwich</h3><img src="sandwich.jpg">
+                </div>
+            </a>
+            <a href="" class="images" id="img8">
+                <div>
+                    <h3>Restaurant Foods</h3><img src="resto.jpg">
+                </div>
+            </a>
+
+        </div>
+
+        <section>
+            <div class="fev" id="fev-recipe">
+                <h1>Your Favorite Recipes</h1>
+                <a href=""><button type="submit" class="loved"><img src="fev.jpg">Favorite</button></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="video" id="videos">
+                <h1>Videos</h1>
+                <div class="food-video">
+                    <video height="400px" width="800px" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section class="add-recipe" id="add-recipe">
+            <form method="post" action='https://register-demo.freecodecamp.org' class="submit-recipe">
+                <h1>Add Your Recipes</h1>
+                <fieldset>
+                    <label for="your-name">Enter Your Name: <input id="your-name" name="your-name" type="text"
+                            required /></label>
+                    <label for="recipe-name">Enter Recipe Name: <input id="recipe-name" name="recipe-name" type="text"
+                            required /></label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Recipe Type</label>
+                    <label for="veg"><input id="veg" type="radio" name="food-type" class="inline" /> Veg</label>
+                    <label for="non-veg"><input id="non-veg" type="radio" name="food-type" class="inline" />
+                        Non-Veg</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="food-pic">Upload a Dish picture: <input id="food-pic" type="file" name="file" /></label>
+                    <label for="ingridient">Enter Recipe Ingridient:
+                        <textarea id="ingridient" name="ingridient" rows="6" cols="30"
+                            placeholder="Recipe Ingridient with Quantity..."></textarea>
+                    </label>
+                    <label for="step">Enter Recipe Steps:
+                        <textarea id="step" name="step" rows="10" cols="30"
+                            placeholder="Recipe Steps in Detail..."></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
